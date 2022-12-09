@@ -1,8 +1,25 @@
 
     <?php
+    if(isset($_POST['submits']))
+    {
+
+    $daytime =$_POST['hours'];
+
+    if ($daytime < 12)
+    {
+        echo "its is morning<br>";
+    }
+    else
+    {
+        echo "it is evening <br>";
+    }
+    
+    }
+
+
     if(isset($_POST['submit']))
     {
-        $percentage=$_POST['percentage'];
+    $percentage=$_POST['percentage'];
 
     if($percentage  < "40%")
     {
